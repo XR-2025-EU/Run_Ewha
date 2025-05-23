@@ -71,5 +71,9 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+<<<<<<< HEAD
 
 *.tgz
+=======
+*.tgz
+>>>>>>> 2b77ab072f89bf8a6c64f56fb629b03f39d9ed6f
