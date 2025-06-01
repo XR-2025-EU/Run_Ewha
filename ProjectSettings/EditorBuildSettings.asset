@@ -53,5 +53,38 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SamplesResources/Scenes/3-Barcodes.unity
     guid: a3102d51f16474e8986f86570e9bed1f
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_StartScreen.unity
+    guid: b0af9fbd48aad433aa2c80d880f1c74e
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_MapFromECC.unity
+    guid: 67c4285454cf04926a9bade8a4736af7
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_MapFromPosco.unity
+    guid: 23674761da5b5455589f531489b1a115
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_MapFromSH.unity
+    guid: c02d16c84ee1049c9ba18a987c8f8724
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_TimeTable.unity
+    guid: 9c8cc0a6451c64c459b9525a49b9f9b6
+  - enabled: 0
+    path: Assets/Run_EWHA/HJW/welcoming_Scene.unity
+    guid: 13c28031a46e7534289cee9fbcaa383e
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/welcoming_Scene_1.unity
+    guid: b48e53b102c274e10984ab309ebbb19b
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/welcoming_Scene_3.unity
+    guid: 05b625e163972419b99567ded874b18c
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_2_X.unity
+    guid: 864d40e6b8ae1104e8fbc1383c399175
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_2.unity
+    guid: d3150b95661728641acb2b233d83d582
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_2_O.unity
+    guid: e6b45c96ae24d9d428a4950dfa4f3166
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
