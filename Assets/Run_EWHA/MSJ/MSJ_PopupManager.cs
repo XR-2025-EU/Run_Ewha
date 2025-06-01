@@ -8,7 +8,7 @@ public class MSJ_PopupManager : MonoBehaviour
     public GameObject popupPanel;   // 팝업 패널 오브젝트
     public Image popupImage;        // 팝업에 표시될 이미지
     public Sprite[] imageList;      // 이미지 목록 (Inspector에서 설정)
-    
+
     private int currentImageIndex = 0;   // 현재 이미지 인덱스
     private bool isPopupVisible = false; // 팝업 표시 여부
 
@@ -35,4 +35,13 @@ public class MSJ_PopupManager : MonoBehaviour
         popupImage.sprite = imageList[currentImageIndex];
         //popupImage.SetNativeSize(); // 이미지 원본 크기로 설정
     }
+    
+    public void ShowImageByIndex(int index)
+    {
+        if (imageList.Length == 0 || index >= imageList.Length) return;
+
+        popupImage.sprite = imageList[index];
+        popupPanel.SetActive(true); // 항상 켜줌
+    }
+
 }
