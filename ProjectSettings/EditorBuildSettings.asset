@@ -87,3 +87,4 @@ EditorBuildSettings:
     path: Assets/Run_EWHA/HJW/quiz_scene_2_O.unity
     guid: e6b45c96ae24d9d428a4950dfa4f3166
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
