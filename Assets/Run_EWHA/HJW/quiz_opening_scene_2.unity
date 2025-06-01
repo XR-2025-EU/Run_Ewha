@@ -513,12 +513,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\uC774\uBC88 \uC2DC\uAC04\uC5D0\uB294 \uAE5C\uC9DD \uD034\uC988\uB97C
-    \uBD10\uC694! \n\uACF5\uB300\uAE4C\uC9C0 \uC62C\uB77C\uC624\uBA70 \uD654\uBA74
+    \uBD10\uC694! \n\n\uACF5\uB300\uAE4C\uC9C0 \uC62C\uB77C\uC624\uBA70 \n\uD654\uBA74
     \uC0C1\uB2E8\uC5D0 \uC788\uB294 \n\uC774\uD654\uC5EC\uB300 \uC0C8\uB0B4\uAE30\uB97C
-    \uC704\uD55C \uD301\uC744 \uBCF4\uC168\uB098\uC694? \n\n"
+    \uC704\uD55C \n\uD301\uB4E4\uC744 \uBCF4\uC168\uB098\uC694? \n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 562f62d38cfae49bfa5e1611a568b878, type: 2}
-  m_sharedMaterial: {fileID: -285383509534686822, guid: 562f62d38cfae49bfa5e1611a568b878,
+  m_fontAsset: {fileID: 11400000, guid: 9542a74e08c384c1fa55bf7160948ea4, type: 2}
+  m_sharedMaterial: {fileID: 5202651168485655385, guid: 9542a74e08c384c1fa55bf7160948ea4,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
