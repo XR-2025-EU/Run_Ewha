@@ -338,20 +338,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 338174142}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 817322160}
-        m_TargetAssemblyTypeName: HJW_moving_scene, Assembly-CSharp
-        m_MethodName: OnClick_LoadScene
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: d3150b95661728641acb2b233d83d582,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &338174142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,9 +434,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD3EC\uC2A4\uCF54\uAD00\uC5D0\uC11C \uC885\uD569\uACFC\uD559\uAD00\uC73C\uB85C
-    \n\n\uAC00\uB294 \uD1B5\uB85C\uB294\n \n\uD3EC\uC2A4\uCF54\uAD00 4\uCE35\uC5D0
-    \uC788\uB2E4."
+  m_text: "\uC678\uBD80\uC778\uC740 ECC \uC9C0\uD558 4\uCE35\uB9CC\n\n\uCD9C\uC785\uD560
+    \uC218 \uC788\uB2E4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 562f62d38cfae49bfa5e1611a568b878, type: 2}
   m_sharedMaterial: {fileID: -285383509534686822, guid: 562f62d38cfae49bfa5e1611a568b878,
@@ -869,50 +855,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800934894}
   m_CullTransparentMesh: 1
---- !u!1 &817322159
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 817322161}
-  - component: {fileID: 817322160}
-  m_Layer: 0
-  m_Name: CLICK
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &817322160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817322159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e45031507b31964e9d07287f7f132d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &817322161
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817322159}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 690.4863, y: 1257.3881, z: -1.0461175}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1081787363
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,9 +912,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC815\uB2F5\uC774\uC5D0\uC694~! \n\uD3EC\uC2A4\uCF54\uAD00 4\uCE35\uC744
-    \uD1B5\uD574 \n\uC885\uD569\uACFC\uD559\uAD00\uC73C\uB85C \n\uB098\uAC08 \uC218
-    \uC788\uC5B4\uC694."
+  m_text: "\uC815\uB2F5\uC774\uC5D0\uC694~! \n\uC678\uBD80\uC778\uC740ECC \uC9C0\uD558
+    4\uCE35\uB9CC\n\uCD9C\uC785\uD560 \uC218 \uC788\uC5B4\uC694."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 04acd6d66138b43bca44a3d47056e425, type: 2}
   m_sharedMaterial: {fileID: 3566973897433302513, guid: 04acd6d66138b43bca44a3d47056e425,
@@ -1132,4 +1073,3 @@ SceneRoots:
   - {fileID: 692491949}
   - {fileID: 601237310}
   - {fileID: 750978931}
-  - {fileID: 817322161}
