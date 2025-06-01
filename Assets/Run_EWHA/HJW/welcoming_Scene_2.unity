@@ -697,8 +697,8 @@ MonoBehaviour:
     \uAC00\uB294 \uAE38\uC744 \uBAA8\uB974\uC2E0\uB2E4\uAD6C\uC694?! \n\n\uC5BC\uB978
     \uC81C\uAC8C \uC9C0\uAE08 \uC704\uCE58\uB97C \uC54C\uB824\uC8FC\uC138\uC694! "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 562f62d38cfae49bfa5e1611a568b878, type: 2}
-  m_sharedMaterial: {fileID: -285383509534686822, guid: 562f62d38cfae49bfa5e1611a568b878,
+  m_fontAsset: {fileID: 11400000, guid: 04acd6d66138b43bca44a3d47056e425, type: 2}
+  m_sharedMaterial: {fileID: 3566973897433302513, guid: 04acd6d66138b43bca44a3d47056e425,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
