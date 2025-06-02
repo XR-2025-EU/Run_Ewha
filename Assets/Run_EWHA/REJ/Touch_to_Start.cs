@@ -19,7 +19,7 @@ public class Touch_to_Start : MonoBehaviour
     void LoadNextScene()
     {
         // 씬 이름으로 로드
-        SceneManager.LoadScene("welcoming_Scene_1");
+        SceneManager.LoadScene("REJ_TimeTable");
 
         // 또는 빌드 인덱스로 로드
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
