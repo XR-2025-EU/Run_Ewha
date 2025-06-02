@@ -78,13 +78,9 @@ EditorBuildSettings:
     path: Assets/Run_EWHA/HJW/welcoming_Scene_3.unity
     guid: 05b625e163972419b99567ded874b18c
   - enabled: 1
-    path: Assets/Run_EWHA/HJW/quiz_scene_2_X.unity
-    guid: 864d40e6b8ae1104e8fbc1383c399175
+    path: Assets/Run_EWHA/NavigationScene.unity
+    guid: 2a454c45a0f88634cabf7e7e620a070b
   - enabled: 1
-    path: Assets/Run_EWHA/HJW/quiz_scene_2.unity
-    guid: d3150b95661728641acb2b233d83d582
-  - enabled: 1
-    path: Assets/Run_EWHA/HJW/quiz_scene_2_O.unity
-    guid: e6b45c96ae24d9d428a4950dfa4f3166
+    path: Assets/Run_EWHA/HJW/welcoming_Scene_2.unity
+    guid: 4ebe0f264b840477fa0a6ee8b19c12cf
   m_configObjects: {}
-  m_UseUCBPForAssetBundles: 0
