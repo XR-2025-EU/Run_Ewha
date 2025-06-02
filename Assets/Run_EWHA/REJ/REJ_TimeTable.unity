@@ -152,6 +152,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text1: {fileID: 1876687131}
+  selectedOption: 0
+  ECC: {fileID: 1835479271}
+  Posco: {fileID: 1531519908}
+  SH: {fileID: 588914919}
+  nextButton: {fileID: 380365743}
 --- !u!4 &237621067
 Transform:
   m_ObjectHideFlags: 0
@@ -180,7 +185,7 @@ GameObject:
   - component: {fileID: 380365744}
   - component: {fileID: 380365743}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Next_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -312,7 +317,7 @@ GameObject:
   - component: {fileID: 588914920}
   - component: {fileID: 588914919}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: SH_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -786,7 +791,7 @@ GameObject:
   - component: {fileID: 1531519909}
   - component: {fileID: 1531519908}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Posco_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -918,7 +923,7 @@ GameObject:
   - component: {fileID: 1835479272}
   - component: {fileID: 1835479271}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ECC_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1049,7 +1054,7 @@ GameObject:
   - component: {fileID: 1876687132}
   - component: {fileID: 1876687131}
   m_Layer: 5
-  m_Name: Text (TMP) (4)
+  m_Name: Text_Selected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
