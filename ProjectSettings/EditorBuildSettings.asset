@@ -104,4 +104,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Run_EWHA/HJW/quiz_opening_scene.unity
     guid: f5f0e4d415a7b5042ae8013119e938dc
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/ending_Scene_1.unity
+    guid: 9e30583451ffa4515868ae62c54c4419
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/ending_Scene_2.unity
+    guid: d8d976afb66e84dfdb029c7bd3ad5619
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/ending_Scene_3.unity
+    guid: 852defc80172d453fab5a8a82cd67e94
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/ending_Scene_4.unity
+    guid: 011c9e9d154f5496fb381980f9dfcc28
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/reward_scene.unity
+    guid: 3f38f9843704a7340b423b0eaf182f9a
   m_configObjects: {}
