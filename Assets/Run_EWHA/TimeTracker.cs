@@ -1,6 +1,6 @@
+using System.Diagnostics;
 using UnityEngine;
 using TMPro;
-using System.Diagnostics;
 
 public class TimeTracker : MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class TimeTracker : MonoBehaviour
     {
         stopwatch = new Stopwatch();
 
-        // 다음 씬에서 이전 소요시간 불러오기
+        // 이전 기록을 한 번만 불러와서 UI에 표시
         if (PlayerPrefs.HasKey("이동시간"))
         {
             float lastTime = PlayerPrefs.GetFloat("이동시간");
@@ -23,13 +23,14 @@ public class TimeTracker : MonoBehaviour
 
             if (timeText != null)
             {
-                timeText.text = string.Format("현재 소요 시간: {0:D2}분 {1:D2}초", minutes, seconds);
+                timeText.text = string.Format("이전 소요 시간: {0:D2}분 {1:D2}초", minutes, seconds);
             }
         }
     }
 
     void Update()
     {
+        // stopwatch가 실제로 돌아가고 있을 때만 UI 갱신!
         if (isTracking && stopwatch.IsRunning)
         {
             int totalSeconds = (int)(stopwatch.ElapsedMilliseconds / 1000f);
@@ -43,16 +44,16 @@ public class TimeTracker : MonoBehaviour
         }
     }
 
-    // 시작 버튼에서 이 함수만 호출
+    // 버튼 클릭 시 호출: stopwatch 시작
     public void StartTimer()
     {
         stopwatch.Reset();
         stopwatch.Start();
         isTracking = true;
-        UnityEngine.Debug.Log("이동 시작!");  // UnityEngine.Debug로 명시
+        UnityEngine.Debug.Log("이동 시작!");
     }
 
-    // AR 카메라에서 대상 인식되면 이 함수 자동 호출!
+    // AR 인식되면 자동으로 호출: stopwatch 정지 + 결과 저장
     public void StopTimer()
     {
         if (!stopwatch.IsRunning) return;
@@ -64,14 +65,13 @@ public class TimeTracker : MonoBehaviour
         int minutes = (int)totalSeconds / 60;
         int seconds = (int)totalSeconds % 60;
 
-        UnityEngine.Debug.Log("최종 소요시간: " + minutes + "분 " + seconds + "초");  // UnityEngine.Debug로 명시
+        UnityEngine.Debug.Log("최종 소요시간: " + minutes + "분 " + seconds + "초");
 
         if (timeText != null)
         {
-            timeText.text = string.Format("현재 소요 시간: {0:D2}분 {1:D2}초", minutes, seconds);
+            timeText.text = string.Format("최종 소요 시간: {0:D2}분 {1:D2}초", minutes, seconds);
         }
 
-        // PlayerPrefs에 저장해서 다음 씬에서도 가져가도록!
         PlayerPrefs.SetFloat("이동시간", totalSeconds);
     }
 }
