@@ -5,22 +5,41 @@ public class PopupManager : MonoBehaviour
 {
     public GameObject popupPanelECC;  // Panel 전체
     public GameObject popupPanelPosco;
+    private bool isPop = false;
 
-    public void ShowPopup(float duration = 2f)
-    {
-        if (Select_Timetable.Instance.selectedOption == 1) { 
-            popupPanelECC.SetActive(true);
-            Invoke("HidePopup", duration); // duration초 뒤에 사라지게
-        }
-        else if (Select_Timetable.Instance.selectedOption == 2) { 
-            popupPanelPosco.SetActive(true);
-            Invoke("HidePopup", duration); // duration초 뒤에 사라지게
-        }
-    }
-
-    void HidePopup()
+    void Start()
     {
         popupPanelECC.SetActive(false);
-        popupPanelPosco.SetActive(false);
+    }
+
+    public void ShowPopup()
+    {
+        if (Select_Timetable.Instance.selectedOption == 1)
+        {
+            if (!isPop)
+            {
+                popupPanelECC.SetActive(true);
+                isPop = true;
+            }
+            else
+            {
+                popupPanelECC.SetActive(false);
+                isPop = false;
+            }
+
+        }
+        else if (Select_Timetable.Instance.selectedOption == 2)
+        {
+            if (!isPop)
+            {
+                popupPanelPosco.SetActive(true);
+                isPop = true;
+            }
+            else
+            {
+                popupPanelPosco.SetActive(false);
+                isPop = false;
+            }
+        }
     }
 }
