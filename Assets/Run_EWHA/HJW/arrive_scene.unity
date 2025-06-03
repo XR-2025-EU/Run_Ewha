@@ -289,7 +289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 201, y: -694}
+  m_AnchoredPosition: {x: 201, y: -700}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612998337
@@ -312,10 +312,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "00\uBD84 00"
+  m_text: "00\uBD84 00\uCD08"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 562f62d38cfae49bfa5e1611a568b878, type: 2}
-  m_sharedMaterial: {fileID: -285383509534686822, guid: 562f62d38cfae49bfa5e1611a568b878,
+  m_fontAsset: {fileID: 11400000, guid: 882201d4b434e7a4f9ea70d1f846b6ce, type: 2}
+  m_sharedMaterial: {fileID: 791027475959357688, guid: 882201d4b434e7a4f9ea70d1f846b6ce,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -340,8 +340,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 85
+  m_fontSizeBase: 85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
