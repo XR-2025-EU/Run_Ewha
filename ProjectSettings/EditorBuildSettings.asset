@@ -122,4 +122,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Run_EWHA/REJ/ending_Scene_5.unity
     guid: 4683ba1f9e22e4ddaad5ee6a5afff9a6
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_2.unity
+    guid: 82076906b2ba87d4793175ef3261e3a4
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_2_O.unity
+    guid: c7ffb226c241035449dadede501021bc
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_2_X.unity
+    guid: 9398a847319b4a94490f30aab782d25e
   m_configObjects: {}
