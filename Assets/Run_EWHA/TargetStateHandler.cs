@@ -3,6 +3,8 @@ using Vuforia;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+using UI_Image = UnityEngine.UI.Image;
+
 public class TargetStateHandler : MonoBehaviour
 {
     public GameObject[] arrowUIImages;
@@ -18,6 +20,11 @@ public class TargetStateHandler : MonoBehaviour
     private ObserverBehaviour observer;
     private bool hasActivated = false;
 
+
+    // ✅ 이모지 관련 필드 
+    public Sprite[] emojiSprites;
+    public UI_Image emojiImage;
+
     void Start()
     {
         observer = GetComponent<ObserverBehaviour>();
@@ -31,6 +38,20 @@ public class TargetStateHandler : MonoBehaviour
             if (arrow != null)
                 arrow.SetActive(false);
         }
+
+        // 초기 이모지 설정 (첫 번째 이모지 또는 null)
+        if (emojiImage != null)
+        {
+            emojiImage.gameObject.SetActive(true);  // 항상 보이게
+            if (emojiSprites != null && emojiSprites.Length > 0)
+            {
+                emojiImage.sprite = emojiSprites[0]; // 초기 이모지를 첫 번째로 세팅
+            }
+            else
+            {
+                emojiImage.sprite = null; // 없으면 빈 이미지
+            }
+        }
     }
 
     private void OnDestroy()
@@ -40,6 +61,17 @@ public class TargetStateHandler : MonoBehaviour
             observer.OnTargetStatusChanged -= OnTargetStatusChanged;
         }
     }
+
+    // 랜덤 이모지 선택 
+    void ShowRandomEmoji()
+{
+    if (emojiSprites != null && emojiSprites.Length > 0 && emojiImage != null)
+    {
+        int rand = Random.Range(0, emojiSprites.Length);
+        emojiImage.sprite = emojiSprites[rand];
+        emojiImage.gameObject.SetActive(true);  // 혹시 비활성화 상태일 경우
+    }
+}
 
     private void OnTargetStatusChanged(ObserverBehaviour behaviour, TargetStatus status)
     {
@@ -75,6 +107,9 @@ public class TargetStateHandler : MonoBehaviour
             {
                 instructionText.text = instructionMessages[myTargetIndex];
             }
+
+            // 안내 이모지 변경
+            ShowRandomEmoji();
 
             // 팝업 매니저에서 이미지 업데이트
             if (popupManager != null && myTargetIndex + 1 < popupManager.imageList.Length)
