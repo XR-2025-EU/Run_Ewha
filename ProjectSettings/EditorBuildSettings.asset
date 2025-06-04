@@ -53,5 +53,82 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SamplesResources/Scenes/3-Barcodes.unity
     guid: a3102d51f16474e8986f86570e9bed1f
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_StartScreen.unity
+    guid: b0af9fbd48aad433aa2c80d880f1c74e
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_MapFromECC.unity
+    guid: 67c4285454cf04926a9bade8a4736af7
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_MapFromPosco.unity
+    guid: 23674761da5b5455589f531489b1a115
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_MapFromSH.unity
+    guid: c02d16c84ee1049c9ba18a987c8f8724
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_TimeTable.unity
+    guid: 9c8cc0a6451c64c459b9525a49b9f9b6
+  - enabled: 0
+    path: Assets/Run_EWHA/HJW/welcoming_Scene.unity
+    guid: 13c28031a46e7534289cee9fbcaa383e
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/welcoming_Scene_1.unity
+    guid: b48e53b102c274e10984ab309ebbb19b
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/welcoming_Scene_3.unity
+    guid: 05b625e163972419b99567ded874b18c
+  - enabled: 1
+    path: Assets/Run_EWHA/NavigationScene.unity
+    guid: 2a454c45a0f88634cabf7e7e620a070b
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/welcoming_Scene_2.unity
+    guid: 4ebe0f264b840477fa0a6ee8b19c12cf
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/arrive_scene.unity
+    guid: 9da4e47c7ebb9d14b8a4c958612fd946
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_opening_scene_2.unity
+    guid: a4649181ebcbad5468c0bb48141c434e
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_opening_scene_3.unity
+    guid: 793767f0f20d75444afc879453a2ca13
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_1.unity
+    guid: 3023f17a80ebd844686759e982ad3026
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_1_X.unity
+    guid: fd8cc0957f54b384e93cb8d430a2361f
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_1_O.unity
+    guid: e62832a378e522640a5fa97692cfbf6a
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_opening_scene.unity
+    guid: f5f0e4d415a7b5042ae8013119e938dc
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/ending_Scene_1.unity
+    guid: 9e30583451ffa4515868ae62c54c4419
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/ending_Scene_2.unity
+    guid: d8d976afb66e84dfdb029c7bd3ad5619
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/ending_Scene_3.unity
+    guid: 852defc80172d453fab5a8a82cd67e94
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/ending_Scene_4.unity
+    guid: 011c9e9d154f5496fb381980f9dfcc28
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/reward_scene.unity
+    guid: 3f38f9843704a7340b423b0eaf182f9a
+  - enabled: 1
+    path: Assets/Run_EWHA/REJ/ending_Scene_5.unity
+    guid: 4683ba1f9e22e4ddaad5ee6a5afff9a6
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_2.unity
+    guid: 82076906b2ba87d4793175ef3261e3a4
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_2_O.unity
+    guid: c7ffb226c241035449dadede501021bc
+  - enabled: 1
+    path: Assets/Run_EWHA/HJW/quiz_scene_2_X.unity
+    guid: 9398a847319b4a94490f30aab782d25e
   m_configObjects: {}
-  m_UseUCBPForAssetBundles: 0
