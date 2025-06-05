@@ -2311,11 +2311,11 @@ MonoBehaviour:
   popupPanel: {fileID: 1617393829}
   popupImage: {fileID: 1666340715}
   imageList:
-  - {fileID: 21300000, guid: 00aa8fb610494416fabcad849bf7345d, type: 3}
-  - {fileID: 21300000, guid: 3dcf501f1f3494953821ee0b05dafc26, type: 3}
-  - {fileID: 21300000, guid: a2c6cf60ebd654eb385ca56add7211b0, type: 3}
-  - {fileID: 21300000, guid: 4f6bd71436b06408195951bbed6e2e53, type: 3}
-  - {fileID: 21300000, guid: b82072eae5f974c349c670849122935c, type: 3}
+  - {fileID: 21300000, guid: 03ed0559d62e64e818a5f975eb8dfc06, type: 3}
+  - {fileID: 21300000, guid: ad125e2989d6247a2ab1008737559a3a, type: 3}
+  - {fileID: 21300000, guid: 348c1b45ad5c54df9a03bfa6e5e31c55, type: 3}
+  - {fileID: 21300000, guid: c39d20eda444a4acabe3d9df6861b24a, type: 3}
+  - {fileID: 21300000, guid: 0027e96711e764c5081ef4c887080f2a, type: 3}
 --- !u!4 &785818349
 Transform:
   m_ObjectHideFlags: 0
@@ -2326,6 +2326,62 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 455.6806, y: 826.3948, z: 5.4028406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &829076164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829076166}
+  - component: {fileID: 829076165}
+  m_Layer: 0
+  m_Name: Emoji_Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &829076165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829076164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfea12cc272e7479783726857b00561c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowUIImages: []
+  myTargetIndex: 0
+  gameManager: {fileID: 0}
+  popupManager: {fileID: 0}
+  instructionText: {fileID: 0}
+  instructionMessages: []
+  nextSceneName: 
+  emojiSprites:
+  - {fileID: 21300000, guid: 024dfec316461f14bb819842fdb5f6ac, type: 3}
+  - {fileID: 21300000, guid: 72ca9b3e775725b4cb9f143f8f1ee755, type: 3}
+  - {fileID: 21300000, guid: b18a1aaad87fca140a8b5132e4cf13fb, type: 3}
+  emojiImage: {fileID: 532469987}
+--- !u!4 &829076166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829076164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 764.15753, y: 1181.1182, z: 9.012776}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2349,7 +2405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &830725692
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5497,3 +5553,4 @@ SceneRoots:
   - {fileID: 353502170}
   - {fileID: 945006526}
   - {fileID: 1498339853}
+  - {fileID: 829076166}
