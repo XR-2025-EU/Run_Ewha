@@ -9,11 +9,12 @@ public class TimeTracker : MonoBehaviour
 
     private bool isTracking = false;
 
+    // 버튼 오브젝트 연결 변수 추가
+    public GameObject startButton;
+
     void Start()
     {
         stopwatch = new Stopwatch();
-
-        // 이전 소요 시간을 UI에 표시하지 않고, 그냥 PlayerPrefs에서만 저장된 값 유지
     }
 
     void Update()
@@ -26,17 +27,23 @@ public class TimeTracker : MonoBehaviour
 
             if (timeText != null)
             {
-                timeText.text = string.Format("현재 소요 시간: {0:D2}분 {1:D2}초", minutes, seconds);
+                timeText.text = string.Format("{0:D2}분 {1:D2}초", minutes, seconds);
             }
         }
     }
 
-    // 버튼 클릭 시 호출: stopwatch 시작
+    // 버튼 클릭 시 호출: stopwatch 시작 + 버튼 사라짐
     public void StartTimer()
     {
         stopwatch.Reset();
         stopwatch.Start();
         isTracking = true;
+
+        // 버튼을 비활성화해서 사라지게 함
+        if (startButton != null)
+        {
+            startButton.SetActive(false);
+        }
     }
 
     // AR 인식되면 자동으로 호출: stopwatch 정지 + 결과 저장
@@ -53,7 +60,7 @@ public class TimeTracker : MonoBehaviour
 
         if (timeText != null)
         {
-            timeText.text = string.Format("최종 소요 시간: {0:D2}분 {1:D2}초", minutes, seconds);
+            timeText.text = string.Format("{0:D2}분 {1:D2}초", minutes, seconds);
         }
 
         PlayerPrefs.SetFloat("이동시간", totalSeconds);
