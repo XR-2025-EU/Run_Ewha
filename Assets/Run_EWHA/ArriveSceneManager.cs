@@ -13,7 +13,7 @@ public class ArriveSceneManager : MonoBehaviour
             int minutes = (int)totalSeconds / 60;
             int seconds = (int)totalSeconds % 60;
 
-            arriveTimeText.text = $"소요 시간: {minutes:D2}분 {seconds:D2}초";
+            arriveTimeText.text = $"{minutes:D2}분 {seconds:D2}초";
             Debug.Log($"도착 씬에서 받은 시간: {minutes:D2}분 {seconds:D2}초");
         }
         else

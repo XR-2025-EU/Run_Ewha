@@ -27,7 +27,7 @@ public class TimeTracker : MonoBehaviour
 
             if (timeText != null)
             {
-                timeText.text = string.Format("현재 소요 시간: {0:D2}분 {1:D2}초", minutes, seconds);
+                timeText.text = string.Format("{0:D2}분 {1:D2}초", minutes, seconds);
             }
         }
     }
@@ -60,7 +60,7 @@ public class TimeTracker : MonoBehaviour
 
         if (timeText != null)
         {
-            timeText.text = string.Format("최종 소요 시간: {0:D2}분 {1:D2}초", minutes, seconds);
+            timeText.text = string.Format("{0:D2}분 {1:D2}초", minutes, seconds);
         }
 
         PlayerPrefs.SetFloat("이동시간", totalSeconds);
