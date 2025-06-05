@@ -3026,6 +3026,7 @@ MonoBehaviour:
   popupPanelECC: {fileID: 2139512712}
   popupPanelPosco: {fileID: 17693955}
   popupPanelSH: {fileID: 1594525459}
+  NPC: {fileID: 532469985}
 --- !u!1 &1058726716
 GameObject:
   m_ObjectHideFlags: 0
