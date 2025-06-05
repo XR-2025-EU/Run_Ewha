@@ -1101,8 +1101,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "(1\uAD50\uC2DC \uAC74\uBB3C\uC744 \uC120\uD0DD\uD574\uC8FC\uC138\uC694)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9542a74e08c384c1fa55bf7160948ea4, type: 2}
-  m_sharedMaterial: {fileID: 5202651168485655385, guid: 9542a74e08c384c1fa55bf7160948ea4,
+  m_fontAsset: {fileID: 11400000, guid: eab5c6a8c624c8c4ba28a5582f8419e8, type: 2}
+  m_sharedMaterial: {fileID: 7712033130490118985, guid: eab5c6a8c624c8c4ba28a5582f8419e8,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
