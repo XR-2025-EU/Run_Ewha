@@ -1714,7 +1714,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9e659c8fc058f4ebfa2e7dc00ecebbea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ab3ce433d7b2f4e6d845f6cfebe24199, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1748,8 +1748,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -219, y: 212}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -627}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &579620501
 GameObject:
@@ -1889,8 +1889,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -356, y: 212}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -0, y: -627}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &645480682
 MonoBehaviour:
@@ -1912,7 +1912,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9e659c8fc058f4ebfa2e7dc00ecebbea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b0aa46a148cf46dc80993b3783a1319, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2108,9 +2108,8 @@ MonoBehaviour:
   popupManager: {fileID: 785818348}
   instructionText: {fileID: 3497303}
   instructionMessages:
-  - "\uC885\uD569\uACFC\uD559\uAD00 \uC785\uAD6C\uB97C \uCC3E\uC544\uC8FC\uC138\uC694!"
-  - "\uC885\uD569\uACFC\uD559\uAD00 \uC9C0\uD558 1\uCE35 \uC5D8\uB9AC\uBCA0\uC774\uD130\uB97C
-    \uCC3E\uC544\uC8FC\uC138\uC694!"
+  - "\uD3EC\uAD00 4\uCE35 \uBE44\uC0C1\uAD6C\uCABD \uCABD\uBB38\uC744 \uCC3E\uC544\uC8FC\uC138\uC694!"
+  - "\uC885\uD569\uACFC\uD559\uAD00 \uC785\uAD6C(\uC9C0\uD558 2\uCE35)\uB97C \uCC3E\uC544\uC8FC\uC138\uC694!"
   - "\uC885\uD569\uACFC\uD559\uAD00 4\uCE35\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   - "\uB098\uAC00\uC11C \uACF5\uD559\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   nextSceneName: arrive_scene
@@ -2175,9 +2174,9 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 6
+  mTrackableName: 5
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/places.xml
+  mDataSetPath: Vuforia/place.xml
   mAspectRatio: 1.3333333
   mImageTargetType: 0
   mWidth: 7
@@ -2201,8 +2200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 690189558}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 6
-  mDatasetName: Vuforia/places.xml
+  mTargetName: 5
+  mDatasetName: Vuforia/place.xml
   mCastedBehaviour: {fileID: 690189558}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -2574,8 +2573,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 201, y: 212}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -627}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &935933678
 MonoBehaviour:
@@ -3395,13 +3394,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 2
+  mTrackableName: 1
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/places.xml
-  mAspectRatio: 0.75
+  mDataSetPath: Vuforia/place.xml
+  mAspectRatio: 1.3333333
   mImageTargetType: 0
   mWidth: 7
-  mHeight: 5.25
+  mHeight: 9.333333
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -3430,9 +3429,8 @@ MonoBehaviour:
   popupManager: {fileID: 785818348}
   instructionText: {fileID: 3497303}
   instructionMessages:
-  - "\uC885\uD569\uACFC\uD559\uAD00 \uC785\uAD6C\uB97C \uCC3E\uC544\uC8FC\uC138\uC694!"
-  - "\uC885\uD569\uACFC\uD559\uAD00 \uC9C0\uD558 1\uCE35 \uC5D8\uB9AC\uBCA0\uC774\uD130\uB97C
-    \uCC3E\uC544\uC8FC\uC138\uC694!"
+  - "\uD3EC\uAD00 4\uCE35 \uBE44\uC0C1\uAD6C\uCABD \uCABD\uBB38\uC744 \uCC3E\uC544\uC8FC\uC138\uC694!"
+  - "\uC885\uD569\uACFC\uD559\uAD00 \uC785\uAD6C(\uC9C0\uD558 2\uCE35)\uB97C \uCC3E\uC544\uC8FC\uC138\uC694!"
   - "\uC885\uD569\uACFC\uD559\uAD00 4\uCE35\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   - "\uB098\uAC00\uC11C \uACF5\uD559\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   nextSceneName: 
@@ -3452,8 +3450,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1188791567}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 2
-  mDatasetName: Vuforia/places.xml
+  mTargetName: 1
+  mDatasetName: Vuforia/place.xml
   mCastedBehaviour: {fileID: 1188791567}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -3698,8 +3696,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85, y: 212}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -627}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1281312293
 MonoBehaviour:
@@ -3773,8 +3771,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56, y: 212}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -627}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1303993090
 MonoBehaviour:
@@ -3796,7 +3794,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9e659c8fc058f4ebfa2e7dc00ecebbea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b0aa46a148cf46dc80993b3783a1319, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3947,9 +3945,8 @@ MonoBehaviour:
   popupManager: {fileID: 785818348}
   instructionText: {fileID: 3497303}
   instructionMessages:
-  - "\uC885\uD569\uACFC\uD559\uAD00 \uC785\uAD6C\uB97C \uCC3E\uC544\uC8FC\uC138\uC694!"
-  - "\uC885\uD569\uACFC\uD559\uAD00 \uC9C0\uD558 1\uCE35 \uC5D8\uB9AC\uBCA0\uC774\uD130\uB97C
-    \uCC3E\uC544\uC8FC\uC138\uC694!"
+  - "\uD3EC\uAD00 4\uCE35 \uBE44\uC0C1\uAD6C\uCABD \uCABD\uBB38\uC744 \uCC3E\uC544\uC8FC\uC138\uC694!"
+  - "\uC885\uD569\uACFC\uD559\uAD00 \uC785\uAD6C(\uC9C0\uD558 2\uCE35)\uB97C \uCC3E\uC544\uC8FC\uC138\uC694!"
   - "\uC885\uD569\uACFC\uD559\uAD00 4\uCE35\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   - "\uB098\uAC00\uC11C \uACF5\uD559\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   nextSceneName: 
@@ -4014,13 +4011,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 5
+  mTrackableName: 4
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/places.xml
-  mAspectRatio: 0.75
+  mDataSetPath: Vuforia/place.xml
+  mAspectRatio: 1.3333333
   mImageTargetType: 0
   mWidth: 7
-  mHeight: 5.25
+  mHeight: 9.333333
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -4040,8 +4037,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1348074070}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 5
-  mDatasetName: Vuforia/places.xml
+  mTargetName: 4
+  mDatasetName: Vuforia/place.xml
   mCastedBehaviour: {fileID: 1348074070}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -4419,9 +4416,8 @@ MonoBehaviour:
   popupManager: {fileID: 785818348}
   instructionText: {fileID: 3497303}
   instructionMessages:
-  - "\uC885\uD569\uACFC\uD559\uAD00 \uC785\uAD6C\uB97C \uCC3E\uC544\uC8FC\uC138\uC694!"
-  - "\uC885\uD569\uACFC\uD559\uAD00 \uC9C0\uD558 1\uCE35 \uC5D8\uB9AC\uBCA0\uC774\uD130\uB97C
-    \uCC3E\uC544\uC8FC\uC138\uC694!"
+  - "\uD3EC\uAD00 4\uCE35 \uBE44\uC0C1\uAD6C\uCABD \uCABD\uBB38\uC744 \uCC3E\uC544\uC8FC\uC138\uC694!"
+  - "\uC885\uD569\uACFC\uD559\uAD00 \uC785\uAD6C(\uC9C0\uD558 2\uCE35)\uB97C \uCC3E\uC544\uC8FC\uC138\uC694!"
   - "\uC885\uD569\uACFC\uD559\uAD00 4\uCE35\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   - "\uB098\uAC00\uC11C \uACF5\uD559\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   nextSceneName: 
@@ -4486,13 +4482,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 3
+  mTrackableName: 2
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/places.xml
-  mAspectRatio: 0.75
+  mDataSetPath: Vuforia/place.xml
+  mAspectRatio: 1.3333333
   mImageTargetType: 0
   mWidth: 7
-  mHeight: 5.25
+  mHeight: 9.333333
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -4512,8 +4508,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1473434624}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 3
-  mDatasetName: Vuforia/places.xml
+  mTargetName: 2
+  mDatasetName: Vuforia/place.xml
   mCastedBehaviour: {fileID: 1473434624}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -5591,9 +5587,8 @@ MonoBehaviour:
   popupManager: {fileID: 785818348}
   instructionText: {fileID: 3497303}
   instructionMessages:
-  - "\uC885\uD569\uACFC\uD559\uAD00 \uC785\uAD6C\uB97C \uCC3E\uC544\uC8FC\uC138\uC694!"
-  - "\uC885\uD569\uACFC\uD559\uAD00 \uC9C0\uD558 1\uCE35 \uC5D8\uB9AC\uBCA0\uC774\uD130\uB97C
-    \uCC3E\uC544\uC8FC\uC138\uC694!"
+  - "\uD3EC\uAD00 4\uCE35 \uBE44\uC0C1\uAD6C\uCABD \uCABD\uBB38\uC744 \uCC3E\uC544\uC8FC\uC138\uC694!"
+  - "\uC885\uD569\uACFC\uD559\uAD00 \uC785\uAD6C(\uC9C0\uD558 2\uCE35)\uB97C \uCC3E\uC544\uC8FC\uC138\uC694!"
   - "\uC885\uD569\uACFC\uD559\uAD00 4\uCE35\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   - "\uB098\uAC00\uC11C \uACF5\uD559\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   nextSceneName: 
@@ -5658,13 +5653,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 4
+  mTrackableName: 3
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/places.xml
-  mAspectRatio: 0.75
+  mDataSetPath: Vuforia/place.xml
+  mAspectRatio: 1.3333333
   mImageTargetType: 0
   mWidth: 7
-  mHeight: 5.25
+  mHeight: 9.333333
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -5684,8 +5679,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1839567288}
   mHiddenRoot: {fileID: 0}
-  mTargetName: 4
-  mDatasetName: Vuforia/places.xml
+  mTargetName: 3
+  mDatasetName: Vuforia/place.xml
   mCastedBehaviour: {fileID: 1839567288}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
