@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Run_EWHA/REJ/REJ_StartScreen.unity
+    guid: b0af9fbd48aad433aa2c80d880f1c74e
+  - enabled: 1
     path: Assets/SamplesResources/Scenes/0-Splash.unity
     guid: 7238041e8d31f4d439b8851a5d4bb6fa
   - enabled: 1
@@ -53,9 +56,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SamplesResources/Scenes/3-Barcodes.unity
     guid: a3102d51f16474e8986f86570e9bed1f
-  - enabled: 1
-    path: Assets/Run_EWHA/REJ/REJ_StartScreen.unity
-    guid: b0af9fbd48aad433aa2c80d880f1c74e
   - enabled: 1
     path: Assets/Run_EWHA/REJ/REJ_MapFromECC.unity
     guid: 67c4285454cf04926a9bade8a4736af7
