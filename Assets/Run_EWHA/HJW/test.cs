@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class HJW_moving_scene : MonoBehaviour
+public class test : MonoBehaviour
 {
     public void OnClick_LoadScene(string SceneObject)
     {
@@ -12,4 +12,3 @@ public class HJW_moving_scene : MonoBehaviour
     }
 
 }
-

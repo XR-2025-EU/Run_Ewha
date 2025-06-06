@@ -422,14 +422,13 @@ MonoBehaviour:
       - m_Target: {fileID: 989622277}
         m_TargetAssemblyTypeName: HJW_moving_scene, Assembly-CSharp
         m_MethodName: OnClick_LoadScene
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: dce197bb65a614b49af9edabf389f347,
-            type: 3}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Intro_8
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1638077135

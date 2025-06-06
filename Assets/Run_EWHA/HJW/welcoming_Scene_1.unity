@@ -204,17 +204,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1673294767}
-        m_TargetAssemblyTypeName: HJW_moving_scene, Assembly-CSharp
+      - m_Target: {fileID: 1673294768}
+        m_TargetAssemblyTypeName: test, Assembly-CSharp
         m_MethodName: OnClick_LoadScene
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 4ebe0f264b840477fa0a6ee8b19c12cf,
-            type: 3}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: welcoming_Scene_2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &114495780
@@ -756,6 +755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1673294766}
   - component: {fileID: 1673294767}
+  - component: {fileID: 1673294768}
   m_Layer: 5
   m_Name: click
   m_TagString: Untagged
@@ -792,6 +792,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e45031507b31964e9d07287f7f132d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1673294768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673294765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bc4da6591a94744a3a3e37a93cfb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
