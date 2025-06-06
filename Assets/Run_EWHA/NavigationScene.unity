@@ -2104,6 +2104,7 @@ MonoBehaviour:
   - {fileID: 1303993088}
   - {fileID: 935933676}
   myTargetIndex: 4
+  finalTargetIndex: 4
   gameManager: {fileID: 44428126}
   popupManager: {fileID: 785818348}
   instructionText: {fileID: 3497303}
@@ -2113,8 +2114,6 @@ MonoBehaviour:
   - "\uC885\uD569\uACFC\uD559\uAD00 4\uCE35\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   - "\uB098\uAC00\uC11C \uACF5\uD559\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   nextSceneName: arrive_scene
-  emojiSprites: []
-  emojiImage: {fileID: 0}
 --- !u!114 &690189557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2315,7 +2314,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 03ed0559d62e64e818a5f975eb8dfc06, type: 3}
   - {fileID: 21300000, guid: ad125e2989d6247a2ab1008737559a3a, type: 3}
   - {fileID: 21300000, guid: 348c1b45ad5c54df9a03bfa6e5e31c55, type: 3}
-  - {fileID: 21300000, guid: c39d20eda444a4acabe3d9df6861b24a, type: 3}
+  - {fileID: 21300000, guid: 4310e1f83cf514e6eb591658bfc48db8, type: 3}
   - {fileID: 21300000, guid: 0027e96711e764c5081ef4c887080f2a, type: 3}
 --- !u!4 &785818349
 Transform:
@@ -2363,16 +2362,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowUIImages: []
   myTargetIndex: 0
+  finalTargetIndex: 4
   gameManager: {fileID: 0}
   popupManager: {fileID: 0}
   instructionText: {fileID: 0}
   instructionMessages: []
   nextSceneName: 
-  emojiSprites:
-  - {fileID: 21300000, guid: 024dfec316461f14bb819842fdb5f6ac, type: 3}
-  - {fileID: 21300000, guid: 72ca9b3e775725b4cb9f143f8f1ee755, type: 3}
-  - {fileID: 21300000, guid: b18a1aaad87fca140a8b5132e4cf13fb, type: 3}
-  emojiImage: {fileID: 532469987}
 --- !u!4 &829076166
 Transform:
   m_ObjectHideFlags: 0
@@ -3421,6 +3416,7 @@ MonoBehaviour:
   - {fileID: 1303993088}
   - {fileID: 935933676}
   myTargetIndex: 0
+  finalTargetIndex: 4
   gameManager: {fileID: 44428126}
   popupManager: {fileID: 785818348}
   instructionText: {fileID: 3497303}
@@ -3430,8 +3426,6 @@ MonoBehaviour:
   - "\uC885\uD569\uACFC\uD559\uAD00 4\uCE35\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   - "\uB098\uAC00\uC11C \uACF5\uD559\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   nextSceneName: 
-  emojiSprites: []
-  emojiImage: {fileID: 0}
 --- !u!114 &1188791569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3937,6 +3931,7 @@ MonoBehaviour:
   - {fileID: 1303993088}
   - {fileID: 935933676}
   myTargetIndex: 3
+  finalTargetIndex: 4
   gameManager: {fileID: 44428126}
   popupManager: {fileID: 785818348}
   instructionText: {fileID: 3497303}
@@ -3946,8 +3941,6 @@ MonoBehaviour:
   - "\uC885\uD569\uACFC\uD559\uAD00 4\uCE35\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   - "\uB098\uAC00\uC11C \uACF5\uD559\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   nextSceneName: 
-  emojiSprites: []
-  emojiImage: {fileID: 0}
 --- !u!114 &1348074069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4408,6 +4401,7 @@ MonoBehaviour:
   - {fileID: 1303993088}
   - {fileID: 935933676}
   myTargetIndex: 1
+  finalTargetIndex: 4
   gameManager: {fileID: 44428126}
   popupManager: {fileID: 785818348}
   instructionText: {fileID: 3497303}
@@ -4417,8 +4411,6 @@ MonoBehaviour:
   - "\uC885\uD569\uACFC\uD559\uAD00 4\uCE35\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   - "\uB098\uAC00\uC11C \uACF5\uD559\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   nextSceneName: 
-  emojiSprites: []
-  emojiImage: {fileID: 0}
 --- !u!114 &1473434623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5357,6 +5349,7 @@ MonoBehaviour:
   - {fileID: 1303993088}
   - {fileID: 935933676}
   myTargetIndex: 2
+  finalTargetIndex: 4
   gameManager: {fileID: 44428126}
   popupManager: {fileID: 785818348}
   instructionText: {fileID: 3497303}
@@ -5366,8 +5359,6 @@ MonoBehaviour:
   - "\uC885\uD569\uACFC\uD559\uAD00 4\uCE35\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   - "\uB098\uAC00\uC11C \uACF5\uD559\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
   nextSceneName: 
-  emojiSprites: []
-  emojiImage: {fileID: 0}
 --- !u!114 &1839567287
 MonoBehaviour:
   m_ObjectHideFlags: 0
