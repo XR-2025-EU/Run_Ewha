@@ -155,4 +155,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Run_EWHA/REJ/Intro_8.unity
     guid: dce197bb65a614b49af9edabf389f347
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 80714c4bbf841fd40aa7600466683699,
+      type: 2}
