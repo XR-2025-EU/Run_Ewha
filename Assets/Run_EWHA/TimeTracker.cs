@@ -1,4 +1,4 @@
-using System.Diagnostics;
+using System.Diagnostics; // Stopwatch 때문에 필요!
 using UnityEngine;
 using TMPro;
 
@@ -9,7 +9,7 @@ public class TimeTracker : MonoBehaviour
 
     private bool isTracking = false;
 
-    // ��ư ������Ʈ ���� ���� �߰�
+    // 버튼 오브젝트 연결
     public GameObject startButton;
 
     void Start()
@@ -32,21 +32,22 @@ public class TimeTracker : MonoBehaviour
         }
     }
 
-    // ��ư Ŭ�� �� ȣ��: stopwatch ���� + ��ư �����
+    // 버튼 클릭 시 호출: 타이머 시작 + 버튼 숨김
     public void StartTimer()
     {
         stopwatch.Reset();
         stopwatch.Start();
         isTracking = true;
 
-        // ��ư�� ��Ȱ��ȭ�ؼ� ������� ��
         if (startButton != null)
         {
             startButton.SetActive(false);
         }
+
+        UnityEngine.Debug.Log("타이머 시작됨!");
     }
 
-    // AR �νĵǸ� �ڵ����� ȣ��: stopwatch ���� + ��� ����
+    // 마지막 단계에서 AR 인식되면 호출: 타이머 정지 + 시간 저장
     public void StopTimer()
     {
         if (!stopwatch.IsRunning) return;
@@ -63,6 +64,10 @@ public class TimeTracker : MonoBehaviour
             timeText.text = string.Format("{0:D2}m {1:D2}s", minutes, seconds);
         }
 
-        PlayerPrefs.SetFloat("�̵��ð�", totalSeconds);
+        // 저장 키 수정 완료!
+        PlayerPrefs.SetFloat("이동시간", totalSeconds);
+
+        // UnityEngine.Debug로 명시!
+        UnityEngine.Debug.Log($"타이머 종료! 저장된 소요 시간: {minutes:D2}m {seconds:D2}s");
     }
 }

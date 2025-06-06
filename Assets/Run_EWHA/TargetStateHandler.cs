@@ -45,7 +45,6 @@ public class TargetStateHandler : MonoBehaviour
 
     private void OnTargetStatusChanged(ObserverBehaviour behaviour, TargetStatus status)
     {
-        // 인식 상태가 TRACKED/LIMITED 중 하나이고, 내 단계가 현재 상태와 같고, 아직 실행 안 했다면
         if ((status.Status == Status.TRACKED ||
              status.Status == Status.EXTENDED_TRACKED ||
              status.Status == Status.LIMITED) &&
@@ -54,7 +53,7 @@ public class TargetStateHandler : MonoBehaviour
         {
             hasActivated = true;
 
-            // 마지막 단계에서만 타이머 멈춤 + 저장!
+            // 마지막 단계에서만 타이머 멈춤 + 저장
             if (myTargetIndex == finalTargetIndex)
             {
                 var timeTracker = FindObjectOfType<TimeTracker>();
