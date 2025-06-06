@@ -3,23 +3,23 @@ using TMPro;
 
 public class ArriveSceneManager : MonoBehaviour
 {
-    public TMP_Text arriveTimeText; // Inspector¿¡¼­ ¿¬°á
+    public TMP_Text arriveTimeText; // Inspectorï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
     void Start()
     {
-        if (PlayerPrefs.HasKey("ÀÌµ¿½Ã°£"))
+        if (PlayerPrefs.HasKey("ï¿½Ìµï¿½ï¿½Ã°ï¿½"))
         {
-            float totalSeconds = PlayerPrefs.GetFloat("ÀÌµ¿½Ã°£");
+            float totalSeconds = PlayerPrefs.GetFloat("ï¿½Ìµï¿½ï¿½Ã°ï¿½");
             int minutes = (int)totalSeconds / 60;
             int seconds = (int)totalSeconds % 60;
 
-            arriveTimeText.text = $"{minutes:D2}ºÐ {seconds:D2}ÃÊ";
-            Debug.Log($"µµÂø ¾À¿¡¼­ ¹ÞÀº ½Ã°£: {minutes:D2}ºÐ {seconds:D2}ÃÊ");
+            arriveTimeText.text = $"{minutes:D2}m {seconds:D2}s";
+            Debug.Log($"ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½: {minutes:D2}m {seconds:D2}s");
         }
         else
         {
-            arriveTimeText.text = "¼Ò¿ä ½Ã°£: Á¤º¸ ¾øÀ½";
-            Debug.Log("ÀúÀåµÈ ÀÌµ¿½Ã°£ÀÌ ¾ø½À´Ï´Ù!");
+            arriveTimeText.text = "ï¿½Ò¿ï¿½ ï¿½Ã°ï¿½: ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½";
+            Debug.Log("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½!");
         }
     }
 }

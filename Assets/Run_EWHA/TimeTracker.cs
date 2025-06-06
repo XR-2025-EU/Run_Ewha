@@ -9,7 +9,7 @@ public class TimeTracker : MonoBehaviour
 
     private bool isTracking = false;
 
-    // ¹öÆ° ¿ÀºêÁ§Æ® ¿¬°á º¯¼ö Ãß°¡
+    // ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
     public GameObject startButton;
 
     void Start()
@@ -27,26 +27,26 @@ public class TimeTracker : MonoBehaviour
 
             if (timeText != null)
             {
-                timeText.text = string.Format("{0:D2}ºÐ {1:D2}ÃÊ", minutes, seconds);
+                timeText.text = string.Format("{0:D2}m {1:D2}s", minutes, seconds);
             }
         }
     }
 
-    // ¹öÆ° Å¬¸¯ ½Ã È£Ãâ: stopwatch ½ÃÀÛ + ¹öÆ° »ç¶óÁü
+    // ï¿½ï¿½Æ° Å¬ï¿½ï¿½ ï¿½ï¿½ È£ï¿½ï¿½: stopwatch ï¿½ï¿½ï¿½ï¿½ + ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ï¿½
     public void StartTimer()
     {
         stopwatch.Reset();
         stopwatch.Start();
         isTracking = true;
 
-        // ¹öÆ°À» ºñÈ°¼ºÈ­ÇØ¼­ »ç¶óÁö°Ô ÇÔ
+        // ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
         if (startButton != null)
         {
             startButton.SetActive(false);
         }
     }
 
-    // AR ÀÎ½ÄµÇ¸é ÀÚµ¿À¸·Î È£Ãâ: stopwatch Á¤Áö + °á°ú ÀúÀå
+    // AR ï¿½Î½ÄµÇ¸ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½: stopwatch ï¿½ï¿½ï¿½ï¿½ + ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     public void StopTimer()
     {
         if (!stopwatch.IsRunning) return;
@@ -60,9 +60,9 @@ public class TimeTracker : MonoBehaviour
 
         if (timeText != null)
         {
-            timeText.text = string.Format("{0:D2}ºÐ {1:D2}ÃÊ", minutes, seconds);
+            timeText.text = string.Format("{0:D2}m {1:D2}s", minutes, seconds);
         }
 
-        PlayerPrefs.SetFloat("ÀÌµ¿½Ã°£", totalSeconds);
+        PlayerPrefs.SetFloat("ï¿½Ìµï¿½ï¿½Ã°ï¿½", totalSeconds);
     }
 }
