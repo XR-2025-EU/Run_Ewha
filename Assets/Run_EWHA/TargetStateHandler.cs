@@ -2,6 +2,7 @@ using UnityEngine;
 using Vuforia;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UI_Image = UnityEngine.UI.Image;
 
 public class TargetStateHandler : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class TargetStateHandler : MonoBehaviour
     private ObserverBehaviour observer;
     private bool hasActivated = false;
 
+    public Sprite[] emojiSprites;
+    public UI_Image emojiImage;
+
     void Start()
     {
         observer = GetComponent<ObserverBehaviour>();
@@ -33,6 +37,33 @@ public class TargetStateHandler : MonoBehaviour
             if (arrow != null)
                 arrow.SetActive(false);
         }
+
+        // ✅ emojiSprites 자동 로딩
+        emojiSprites = new Sprite[]
+        {
+            Resources.Load<Sprite>("Sprites/NPC"),
+            Resources.Load<Sprite>("Sprites/NPC_2"),
+            Resources.Load<Sprite>("Sprites/NPC_3")
+        };
+
+        // null 체크 및 경고
+        for (int i = 0; i < emojiSprites.Length; i++)
+        {
+            if (emojiSprites[i] == null)
+            {
+                Debug.LogWarning($"❌ emojiSprites[{i}] 로드 실패! 경로를 확인하세요.");
+            }
+        }
+
+        // 초기 이모지 설정
+        if (emojiImage != null)
+        {
+            emojiImage.gameObject.SetActive(true);  // 항상 보이게
+            if (emojiSprites != null && emojiSprites.Length > 0 && emojiSprites[0] != null)
+            {
+                emojiImage.sprite = emojiSprites[0];
+            }
+        }
     }
 
     private void OnDestroy()
@@ -41,6 +72,35 @@ public class TargetStateHandler : MonoBehaviour
         {
             observer.OnTargetStatusChanged -= OnTargetStatusChanged;
         }
+    }
+
+    void ShowRandomEmoji()
+    {
+        Debug.Log("🎯 ShowRandomEmoji() 호출됨");
+
+        if (emojiSprites == null)
+        {
+            Debug.LogWarning("⚠️ emojiSprites가 null입니다!");
+            return;
+        }
+
+        if (emojiSprites.Length == 0)
+        {
+            Debug.LogWarning("⚠️ emojiSprites의 길이가 0입니다!");
+            return;
+        }
+
+        if (emojiImage == null)
+        {
+            Debug.LogWarning("⚠️ emojiImage가 null입니다!");
+            return;
+        }
+
+        int rand = Random.Range(0, emojiSprites.Length);
+        Debug.Log($"🎲 랜덤 인덱스: {rand}");
+        emojiImage.sprite = emojiSprites[rand];
+        emojiImage.gameObject.SetActive(true);
+        Debug.Log("✅ 이모지 이미지 변경 완료");
     }
 
     private void OnTargetStatusChanged(ObserverBehaviour behaviour, TargetStatus status)
@@ -68,6 +128,8 @@ public class TargetStateHandler : MonoBehaviour
                 }
             }
 
+            ShowRandomEmoji();
+
             // 화살표 UI 갱신
             for (int i = 0; i < arrowUIImages.Length; i++)
             {
@@ -85,6 +147,8 @@ public class TargetStateHandler : MonoBehaviour
             if (popupManager != null && myTargetIndex + 1 < popupManager.imageList.Length)
             {
                 popupManager.ShowImageByIndex(myTargetIndex + 1);
+
+                emojiImage.sprite = emojiSprites[(myTargetIndex+1) % 3];
             }
 
             // 단계 진행

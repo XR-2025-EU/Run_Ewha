@@ -740,14 +740,13 @@ MonoBehaviour:
       - m_Target: {fileID: 1468014208}
         m_TargetAssemblyTypeName: HJW_moving_scene, Assembly-CSharp
         m_MethodName: OnClick_LoadScene
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: ca658a2777001492cb4f1d49fa416649,
-            type: 3}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Intro_1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1080598434
@@ -770,7 +769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 803b2dae91dbe42afadd488567f2e09e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 92dd73c43efac456ba50e5b3afa13862, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

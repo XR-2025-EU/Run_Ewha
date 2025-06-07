@@ -6,10 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class HJW_moving_scene : MonoBehaviour
 {
-    public void OnClick_LoadScene(Object SceneObject)
+    public void OnClick_LoadScene(string SceneObject)
     {
-        SceneManager.LoadScene(SceneObject.name);
+        SceneManager.LoadScene(SceneObject);
     }
 
 }
-

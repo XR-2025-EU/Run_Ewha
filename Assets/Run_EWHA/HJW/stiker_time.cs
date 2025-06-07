@@ -8,17 +8,24 @@ public class stiker_time : MonoBehaviour
 
     void Start()
     {
+        stickerObject = GameObject.Find("Sticker_time");
+
+        if (stickerObject == null)
+        {
+            Debug.LogWarning("[stiker_time] 'Sticker_time'라는 이름의 오브젝트를 찾을 수 없습니다.");
+            return;
+        }
+
         stickerObject.SetActive(false);
         EvaluateConditions();
     }
 
     public void EvaluateConditions()
     {
-        float totalSeconds = PlayerPrefs.GetFloat("�̵��ð�");
-        int quiz1 = PlayerPrefs.GetInt("Quiz1Correct");
-        int quiz2 = PlayerPrefs.GetInt("Quiz2Correct");
+        float totalSeconds = PlayerPrefs.GetFloat("�̵��ð�");
+        if (stickerObject == null) return;
 
-        if (totalSeconds <= 900 && quiz1 == 1 && quiz2 == 1)
+        if (totalSeconds <= 900)
         {
             stickerObject.SetActive(true);
         }
